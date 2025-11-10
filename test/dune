@@ -1,0 +1,9 @@
+(test
+ (name test_engine)
+ (libraries minigrad)
+ (modules test_engine))
+
+(test
+ (name test_nn)
+ (libraries minigrad)
+ (modules test_nn))

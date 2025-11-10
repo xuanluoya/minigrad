@@ -1,0 +1,4 @@
+(library
+ (name minigrad)
+ (public_name minigrad)
+ (modules :standard))
