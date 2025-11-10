@@ -2,13 +2,13 @@
 
 ![cat](./asset/cat.jpg)
 
-**minigrad** is a simple OCaml refactoring of [microgard](https://github.com/karpathy/micrograd). It is a minimal automatic differentiation engine that implements reverse-mode automatic differentiation to handle dynamically constructed directed acyclic graphs (DAGs), and builds a small PyTorch-like neural network library on top of it.
+**minigrad** is a simple OCaml refactoring of [micrograd](https://github.com/karpathy/micrograd). It is a minimal automatic differentiation engine that implements reverse-mode automatic differentiation to handle dynamically constructed directed acyclic graphs (DAGs), and builds a small PyTorch-like neural network library on top of it.
 
 It is **not recommended for educational purposes**, because the code is pretty messy ( ´･ω)
 
-**minigrad**是对[microgard](https://github.com/karpathy/micrograd)使用ocaml的简单重构，是一个极小的仅可用的自动微分引擎，它实现了反向自动微分（反向模式自动微分）来处理动态构建的有向无环图（DAG），并在其上构建了一个类似PyTorch API的小型神经网络库。
+**minigrad**是对[micrograd](https://github.com/karpathy/micrograd)使用OCaml的简单重构，是一个极小的简易自动微分引擎，它实现了反向自动微分（反向模式自动微分）来处理动态构建的有向无环图（DAG），并在其上构建了一个类似PyTorch API的小型神经网络库。
 
-**不建议用于教育，因为代码很烂 ( ´･ω) **
+不建议用于教育，因为代码很烂 ( ´･ω) 
 
 ## Example 示例
 
@@ -49,17 +49,17 @@ show prod;
 show out
 ```
 
-##  Neural Networks 神经网络
+## Neural Networks 神经网络
 
-I implemented [a simple toy neural network in the neural network test](./test/test_nn.ml). I originally wanted to continue the demo from micrograd, but the most popular OCaml library, Owl, seems not to support macOS, so I cannot plot graphs. I haven’t continued from there, but maybe you can implement it—the materials are all here. ο(=•ω＜=)ρ⌒☆
+I implemented [a simple toy neural network in the neural network test.](./test/test_nn.ml) I originally intended to continue with the demo in micrograd, but the most popular owl library in OCaml doesn't seem to support macOS, which prevented me from drawing. So I lost interest in continuing. Maybe you can implement it. Everything is right here. ο(=•ω < =)ρ⌒☆
 
-我在[神经网络测试里](./test/test_nn.ml)实现了一个简单的菜数字网络，我本来想继续实现micrograd里的demo，但是ocaml最火爆的owl库似乎不支持macos，这让我无法画图，于是我再没有性质继续下去，也许你可以实现它，东西都摆在这里。ο(=•ω＜=)ρ⌒☆
+我在神经网络测试里 实现了一个[简单的玩具神经网络，](./test/test_nn.ml)我本来想继续实现micrograd里的demo，但是OCaml最火爆的owl库似乎不支持macOS，这让我无法画图，于是我再没有兴致继续下去，也许你可以实现它，东西都摆在这里。ο(=•ω＜=)ρ⌒☆
 
 ## Running Tests 运行测试
 
 Test files are located in `test/*`, including [test_engine](./test/test_engine.ml) for testing the engine, and [test_nn](./test/test_nn.ml) for testing the neural network. Running them requires only OCaml; no other dependencies are needed.
 
-测试文件位于 `test/*`，分别是用于测试引擎的[test_engine](./test/test_engine.ml)和用于测试神经网络的[test_nn](./test/test_nn.ml)，运行他们不需要任何东西，只需要ocaml。
+测试文件位于 `test/*`，分别是用于测试引擎的[test_engine](./test/test_engine.ml) 和用于测试神经网络的[test_nn](./test/test_nn.ml) ，运行他们不需要任何其他依赖，只需要OCaml。
 
 ## License
 
